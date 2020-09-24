@@ -17,8 +17,6 @@ from rl_algorithms.recurrent.utils import infer_leading_dims, restore_leading_di
 from rl_algorithms.registry import build_backbone, build_head
 from rl_algorithms.utils.config import ConfigDict
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 class Brain(nn.Module):
     """Class for holding backbone and head networks."""
